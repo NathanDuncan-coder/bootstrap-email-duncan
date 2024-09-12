@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Bootstrap Email Project</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 col-sm-1 d-block bg-gray sidebar collapse">
+          <h2 class="mb-3">Hello username</h2>
+          <button type="button" class="btn btn-info mb-4 w-40 text-dark">Compose  
+            <span class="badge bg-light text-dark">Please write a message</span>
+
+          </button>
+
+          <button type="button" class="btn btn-info  mb-4 w-100">
+            Inbox <span class="badge bg-light text-dark">10</span>
+            <span class="badge bg-light text-dark"> unread messages</span>
+          </button>
+
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <button type="button" class="btn btn-info w-100 mb-4 w-20">Saved <span class="badge bg-light text-dark">4</span></button>
+            </li>
+
+
+            <li class="nav-item mb-2">
+              <button type="button" class="btn btn-info mb-4 text-dark w-100">
+                Draft:<span class="badge  badge-light "></span>
+                <span class="badge bg-light  text-dark">Fleix1993@yahoo.com</span>
+            </li>
+
+            <li class="nav-item mb-2">
+              <button type="button" class="btn btn-info  text-dark w-100 mb-4 w-20">Sent <span class="badge bg-light text-dark">6</span></button>
+            </li>
+
+            <li class="nav-item mb-2">
+              <button type="button" class="btn btn-info text-dark w-100 mb-4 w-20">Trash <span class="badge bg-light text-dark">999</span></button>
+            </li>
+
+            <li class="nav-item mb-2">
+              <button type="button" class="btn btn-primary text-light w-100">Trash Full <span class="badge bg-light text-dark">Please Empty</span></button>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+        <!-- Main content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Email Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search emails" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Email list -->
+<div class="col-md-4">
+  <ul class="list-group ml-4"  >
+    <li class="list-group-item p-3 " style="width: 18 rem;"  >
+        <p class ="card-text" >David.Lex@gmail.com</p>
+<br>Hey did you send the...
+    </li>
+    <li class="list-group-item p-3" style="width: 18 rem;">
+      <p>SamV82@yahoo.com</p><br>Here's the paperwork for...
+    </li>
+    <li class="list-group-item p-3" style="width: 18 rem;" >
+      <p>Sony: <a class="link-opacity-100" href="https://store.playstation.com/en-us/pages/latest?gclid=c4cfbbc5d30b1c537038dd1027abbe2f&gclsrc=3p.ds&msclkid=c4cfbbc5d30b1c537038dd1027abbe2f">Here are the latest deals for...</a></p>
+    </li>
+  </ul>
+</div>
+
+<!-- Email content -->
+<div class="col-md-8 mb-4 mr-4">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body p-4">
+      <h6>To: Johnbacker@gmail.com</h6>
+      <h6>From: username@gmail.com</h6>
+      <h3 class="card-title"><strong>Subject: company paperwork</strong></h3>
+      <p class="card-text">Hey John, here's the paperwork. If you need anything else feel free to email or call. - username</p>
+      <textarea class="form-control mb-3" id="response" name="response" rows="5" placeholder="Type your response here"></textarea>
+      <div class="btn-group" role="group" aria-label="Email actions">
+        <button type="button" class="btn btn-outline-primary">Reply</button>
+        <button type="button" class="btn btn-outline-primary">Attach File</button>
+        <button type="button" class="btn btn-outline-primary">Discard</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </main>
+      </div>
+    </div>
+
+    <!-- Mobile navigation -->
+    <nav class="mobile-nav  d-md-none">
+      <a href="#" class="bloc-icon">
+        <img src="ressources/home.svg" alt="Home">
+      </a>
+      <a href="#" class="bloc-icon">
+        <img src="ressources/heart.svg" alt="Favorites">
+      </a>
+      <a href="#" class="bloc-icon">
+        <img src="ressources/magnifying-glass.svg" alt="Search">
+      </a>
+      <a href="#" class="bloc-icon">
+        <img src="ressources/plus.svg" alt="Compose">
+      </a>
+      <a href="#" class="bloc-icon">
+        <img src="ressources/user.svg" alt="Profile">
+      </a>
+
+    </nav>
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+
+  <div class="carousel-container col-lg-10 col-md-8 col-sm-4 mb-3">
+    <div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://th.bing.com/th/id/OIP.OAxW9QYsCzXVOkFj6kEg_gHaKU?w=208&h=291&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="d-block w-100" alt="Advertisement 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://th.bing.com/th/id/OIP.YTWxYYfIyZkNvHu3T3V0agHaJn?w=139&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="d-block w-100" alt="Advertisement 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://th.bing.com/th/id/OIP.3Z01OslYIR5EjljE8HQWfAAAAA?w=120&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="d-block w-100" alt="Advertisement 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+</html>
